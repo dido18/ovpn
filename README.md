@@ -1,9 +1,9 @@
-# toscana-riporti-vpn
+# VPN 
 
 OpenVPN for the Toscana Riporti 
 
-- CA Passphrase: `ToscanaRiporti`
-- CN `toscana-riporti-vpn`
+- CA Passphrase: ``
+- CN ``
 
 Subnet network of the VPN:
 ```
