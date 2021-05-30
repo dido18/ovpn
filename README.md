@@ -1,6 +1,6 @@
 # VPN 
 
-OpenVPN for the Toscana Riporti 
+OpenVPN settings
 
 - CA Passphrase: ``
 - CN ``
@@ -29,15 +29,13 @@ Add a new user with `CLIENTNAME` and `IP`, where IP MUST be a free IP.
 Copy locally the `ovpen` created
 
 ```
-scp root@logs.thingsoninternet.it:/root/letomec-vpn/client_files/<CLIENTNAME>.ovpn <local folder>
+scp root@REMOTEHOST:/root/letomec-vpn/client_files/<CLIENTNAME>.ovpn <local folder>
 ```
 
 List all users with their IPS
 ```
 grep -o -e "10\.66\.77\.[0-9]*" data/ccd/*
 
-data/ccd/andrea:10.66.77.3
-data/ccd/test:10.66.77.2
 ```
 
 delete an user
@@ -50,7 +48,7 @@ $ bin/revoke_client.sh [CLIENTNAME]
 Copy the ip in the `/etc/hosts`
 
 ``` 
-195.201.224.239 vpn.sfcoding.com
+195.201.224.239 YOUR_HOST
 ```
 
 start open vpn 
